@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Custom Toolbar</string>
+    <string name="empty" />
 </resources>
