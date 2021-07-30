@@ -11,6 +11,7 @@ import com.fullstackoasis.customtoolbar.ui.stars.StarsFragment;
 
 public class MainActivity extends AppCompatActivity {
     private ImageButton btnStars;
+    private ImageButton btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,8 +30,23 @@ public class MainActivity extends AppCompatActivity {
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.container, StarsFragment.newInstance())
                         .commitNow();
-
+                toggleBackArrowVisibility();
+            }
+        });
+        btnBack = findViewById(R.id.imageButtonBack);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, MainFragment.newInstance())
+                        .commitNow();
+                toggleBackArrowVisibility();
             }
         });
     }
+
+    protected void toggleBackArrowVisibility() {
+        btnBack.setVisibility(btnBack.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
+    }
+
 }
