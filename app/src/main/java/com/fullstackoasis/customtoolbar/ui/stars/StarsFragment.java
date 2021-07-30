@@ -11,8 +11,6 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.fullstackoasis.customtoolbar.R;
-import com.fullstackoasis.customtoolbar.ui.main.MainFragment;
-import com.fullstackoasis.customtoolbar.ui.main.MainViewModel;
 
 public class StarsFragment extends Fragment {
 
