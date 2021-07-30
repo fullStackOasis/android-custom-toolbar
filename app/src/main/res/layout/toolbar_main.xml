@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -13,6 +14,7 @@
         app:layout_constraintEnd_toStartOf="@id/imageButtonCamera"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/black"
         app:srcCompat="@drawable/ic_baseline_stars_24" />
 
     <ImageButton
@@ -23,6 +25,7 @@
         app:layout_constraintStart_toEndOf="@id/imageButtonStars"
         app:layout_constraintEnd_toStartOf="@id/imageButtonSports"
         app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/black"
         app:srcCompat="@drawable/ic_baseline_camera_24" />
 
     <ImageButton
@@ -33,6 +36,7 @@
         app:layout_constraintEnd_toStartOf="@id/imageButtonPan"
         app:layout_constraintStart_toEndOf="@id/imageButtonCamera"
         app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/black"
         app:srcCompat="@drawable/ic_baseline_sports_bar_24" />
 
     <ImageButton
@@ -43,6 +47,7 @@
         app:layout_constraintEnd_toStartOf="@id/imageButtonPhoto"
         app:layout_constraintStart_toEndOf="@id/imageButtonSports"
         app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/black"
         app:srcCompat="@drawable/ic_baseline_pan_tool_24" />
 
     <ImageButton
@@ -53,6 +58,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/imageButtonPan"
         app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/black"
         app:srcCompat="@drawable/ic_baseline_photo_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
